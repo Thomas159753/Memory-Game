@@ -1,0 +1,40 @@
+.score{
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: bold;
+}
+ul{
+    align-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    color: var(--white);
+    cursor: pointer;
+    width: 12vh;
+}
+
+li img {
+    width: 100%;
+    max-width: 12vh;
+    height: auto;
+}
+
+@media only screen and (max-width: 1366px){
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        list-style-type: none;
+        padding: 0;
+    }
+    .tiles{   
+        text-align: center;
+        align-content: center;
+    }
+}
